@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring-Js Crud</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/Js-Spring-CRUD.css">
+</head>
+
+<body>
+    <header class="bg-primary">
+        <h1 class="text-white">CRUD</h1>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            id="open-model" onclick="clearField()">
+            Create note
+        </button>
+    </header>
+    <main class="pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Notes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="myForm" class="insert">
+                                        <div class="mb-3">
+                                            <label class="form-label">Topic name</label>
+                                            <input type="text" class="form-control" id="form-name"
+                                                aria-describedby="emailHelp" name="topicName">
+                                        </div>
+                                        <div>
+                                            <label class="form-label">write notes</label>
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                style="height: 100px" name="note" id="form-note"></textarea>
+
+                                        </div>
+                                        <br>
+
+                                        <button type="submit" class="btn btn-primary" id="submit-form">Submit</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Update</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="myForm" class="update">
+                                        <input type="text" class="form-control" id="form-ids" hidden="hidden"
+                                                name="nId">
+                                        <div class="mb-3">
+                                            <label class="form-label">Topic name</label>
+                                            <input type="text" class="form-control" id="form-names"
+                                                aria-describedby="emailHelp" name="topicName">
+                                        </div>
+                                        <div>
+                                            <label class="form-label">write notes</label>
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                style="height: 100px" name="note" id="form-notes"></textarea>
+
+                                        </div>
+                                        <br>
+
+                                        <button type="submit" class="btn btn-primary" id="submit-form">Submit</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <button class="btn btn-success" id="load-data">refresh</button>
+            <div class="row" id="put-row">
+
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/Js-Spring-CRUD.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script>
+
+       
+    </script>
+
+</body>
+
+</html>
