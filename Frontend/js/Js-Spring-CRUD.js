@@ -60,10 +60,10 @@ document.querySelector(".insert").addEventListener('submit', (e) => {
 
     xhr.send(params);
 
-    clearField();
+    clearFields();
 });
 
-function clearField() {
+function clearFields() {
     var name = document.getElementById('form-name').value = '';
     var notes = document.getElementById('form-note').value = '';
 
