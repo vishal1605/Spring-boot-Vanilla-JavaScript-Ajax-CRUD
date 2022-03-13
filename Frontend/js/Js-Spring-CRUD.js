@@ -24,6 +24,7 @@ function showAllCards() {
 
 
             }
+            minimizeText();
         }
     }
     xhr.send();
@@ -147,7 +148,7 @@ document.querySelector(".update").addEventListener('submit', (e) => {
     for (var i = 0; i < para.length; i++) {
         var strings = para[i].innerText;
         // console.log(strings);
-        var result = add3Dots(strings, 13);
+        var result = add3Dots(strings, 180);
         para[i].innerText = result;
     
     }
